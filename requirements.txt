@@ -4,4 +4,3 @@ Pillow
 img2pdf
 pyppeteer
 pyaes
-beautifulsoup4
