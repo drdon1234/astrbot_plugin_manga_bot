@@ -1,0 +1,6 @@
+name: astrbot_plugin_manga_bot
+desc: 聚合漫画插件，将漫画转换为PDF文件发送
+help: None
+version: v1.0
+author: drdon1234
+repo: https://github.com/drdon1234/astrbot_plugin_manga_bot
