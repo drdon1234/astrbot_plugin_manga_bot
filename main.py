@@ -9,7 +9,7 @@ from typing import List
 
 @register("astrbot_plugin_manga_bot", "drdon1234", "聚合漫画插件", "1.0")
 class MangaBotPlugin(Star):
-    def __init__(self, context: Context, config: dict):
+    def __init__(self, context: Context):
         super().__init__(context)
         self.crawlers = {
             "cola": ColaCrawler(),
@@ -26,7 +26,7 @@ class MangaBotPlugin(Star):
 
     @filter.event_message_type(EventMessageType.ALL)
     async def manga_search_handler(self, event: AstrMessageEvent):
-        match = re.search(r'/搜(\w+)\s+(.*)', event.message_str)
+        match = re.search(r'.?搜(\w+)\s+(.*)', event.message_str)
         if not match:
             return
         website = match.group(1)
