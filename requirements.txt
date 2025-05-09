@@ -1,0 +1,7 @@
+curl_cffi
+bs4
+Pillow
+img2pdf
+pyppeteer
+pyaes
+beautifulsoup4
