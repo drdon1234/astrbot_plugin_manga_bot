@@ -23,7 +23,7 @@ class BaseCrawler(ABC):
         self.CACHE_DIR = os.path.join("./cache", crawler_id)
         os.makedirs(self.MANGA_DIR, exist_ok=True)
         os.makedirs(self.CACHE_DIR, exist_ok=True)
-        self.PROXIES = proxies or {"http": "http://127.0.0.1:7897", "https": "http://127.0.0.1:7897"}
+        self.PROXIES = proxies or None #{"http": "http://127.0.0.1:7897", "https": "http://127.0.0.1:7897"}
         self.HEADERS = headers or {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
             "Accept": "*/*",
